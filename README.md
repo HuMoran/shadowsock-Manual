@@ -26,17 +26,17 @@
 ```
 ssh -i "shouer.pem" ubuntu@ec2-13-124-2-149.ap-northeast-2.compute.amazonaws.com
 ```
-15. 登录服务器后，切换到root用户，下载shadowsocks-go语言版本
+15. 登录服务器后，切换到root用户，下载shadowsocks-go语言版本<br>
 ```
 sudo -i
 wget https://github.com/shadowsocks/shadowsocks-go/releases/download/1.2.1/shadowsocks-server.tar.gz
 ```
 目前go语言版本的shadowsocks的版本是1.2.1，大家搭服务器的时候，可以去git上面看看版本有没有更新，有更新最好用最新的版本<br>
-16. 解压
+16. 解压<br>
 ```
 tar -zxvf shadowsocks-server.tar.gz
 ```
-17. 创建config.json，输入以下内容：
+17. 创建config.json，输入以下内容：<br>
 ```
 vi config.json
 {
@@ -50,7 +50,7 @@ vi config.json
     "timeout":600
 }
 ```
-注意：其中的server为服务器局域网内的ip地址，可以通过 ifconfig 命令查看，password可以随意输入，只要客户端和服务器的一致就行。
+注意：其中的server为服务器局域网内的ip地址，可以通过 ifconfig 命令查看，password可以随意输入，只要客户端和服务器的一致就行。<br>
 18. 执行
 ```
 nohup ./shadowsocks-server
