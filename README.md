@@ -31,6 +31,7 @@ ssh -i "shouer.pem" ubuntu@ec2-13-124-2-149.ap-northeast-2.compute.amazonaws.com
 sudo -i
 wget https://github.com/shadowsocks/shadowsocks-go/releases/download/1.2.1/shadowsocks-server.tar.gz
 ```
+<br>
 目前go语言版本的shadowsocks的版本是1.2.1，大家搭服务器的时候，可以去git上面看看版本有没有更新，有更新最好用最新的版本<br>
 16. 解压<br>
 ```
@@ -40,18 +41,19 @@ tar -zxvf shadowsocks-server.tar.gz
 ```
 vi config.json
 {
-    "server":"xxxxx",
-    "server_port":8388,
-    "local_address": "127.0.0.1",
-    "local_port":1080,
-    "password":"xxx",
-    "method": "aes-128-cfb",
-    "fast_open": true,
-    "timeout":600
+      "server":"xxxxx",
+      "server_port":8388,
+      "local_address": "127.0.0.1",
+      "local_port":1080,
+      "password":"xxx",
+      "method": "aes-128-cfb",
+      "fast_open": true,
+      "timeout":600
 }
 ```
-注意：其中的server为服务器局域网内的ip地址，可以通过 ifconfig 命令查看，password可以随意输入，只要客户端和服务器的一致就行。<br>
-18. 执行
+<br>
+**注意**：其中的server为服务器局域网内的ip地址，可以通过 ifconfig 命令查看，password可以随意输入，只要客户端和服务器的一致就行。<br>
+18. 执行<br>
 ```
 nohup ./shadowsocks-server
 ```
@@ -77,7 +79,7 @@ chrom:<br>
 ![](16.png)
 
 火狐配置：<br>
-![](17.png)
+![](17.png)<br>
 chrom配置：<br>
 ![](18.png)
 ![](19.png)
