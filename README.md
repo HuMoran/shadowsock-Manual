@@ -32,12 +32,14 @@ sudo -i
 wget https://github.com/shadowsocks/shadowsocks-go/releases/download/1.2.1/shadowsocks-server.tar.gz
 ```
 <br>
-目前go语言版本的shadowsocks的版本是1.2.1，大家搭服务器的时候，可以去git上面看看版本有没有更新，有更新最好用最新的版本<br>
-16. 解压<br>
+目前go语言版本的shadowsocks的版本是1.2.1，大家搭服务器的时候，可以去git上面看看版本有没有更新，有更新最好用最新的版本
+
+16. 解压
 ```
 tar -zxvf shadowsocks-server.tar.gz
 ```
-17. 创建config.json，输入以下内容：<br>
+
+17. 创建config.json，输入以下内容：
 ```
 vi config.json
 {
@@ -51,9 +53,9 @@ vi config.json
       "timeout":600
 }
 ```
-<br>
-**注意**：其中的server为服务器局域网内的ip地址，可以通过 ifconfig 命令查看，password可以随意输入，只要客户端和服务器的一致就行。<br>
-18. 执行<br>
+**注意**：其中的server为服务器局域网内的ip地址，可以通过 ifconfig 命令查看，password可以随意输入，只要客户端和服务器的一致就行。
+
+18. 执行
 ```
 nohup ./shadowsocks-server
 ```
@@ -74,7 +76,7 @@ sudo apt-get install shadowsocks-qt5
 23. 保持成功后，选择测试延迟，并连接服务器。
 24. 浏览器配置：
 火狐安装：<br>
-![](15.png)
+![](15.png)<br>
 chrom:<br>
 ![](16.png)
 
