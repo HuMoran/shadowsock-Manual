@@ -74,7 +74,7 @@ sudo apt-get install shadowsocks-qt5
 22. 输入服务器地址（服务器的公网地址）、端口、密钥（对应服务器config.json文件中的password）、加密方式保存。<br>
 ![](14.png)
 23. 保持成功后，选择测试延迟，并连接服务器。
-24. 浏览器配置：
+24. 浏览器配置：<br>
 火狐安装：<br>
 ![](15.png)<br>
 chrom:<br>
